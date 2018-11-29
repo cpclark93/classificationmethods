@@ -28,5 +28,5 @@ fit
 plot(fit)
 varImp(fit)
 set.seed(100)
-pred <- predict(fit, newdata = examtest)
-confusionMatrix(pred, examtest$Evaluation)
+pred <- predict(fit, newdata = test)
+confusionMatrix(pred, test$Evaluation)
